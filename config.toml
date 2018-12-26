@@ -1,0 +1,62 @@
+baseURL = "https://rhubinak.github.io/"
+languageCode = "en-us"
+title = "Robert's blog"
+theme = "kiss"
+copyright = "&copy;<a href=\"https://github.com/rhubinak\">Robert Hubinak</a> 2018"
+
+# Number of posts per page
+Paginate = 5
+enableRobotsTXT = true
+DefaultContentLanguage = "en"
+
+[params.rss] # Adding this tag enables RSS feed
+includeContent = true # Includes whole content in rss
+authorName = "Robert Hubinak" # Author full name
+authorEmail = "rhubinak@gmail.com" # Author email
+
+[params.info]
+adsense = "" # Adsense ID (ID only, without ca-pub-)
+enableSocial = false # Adds OpenGraph and Twitter cards
+homeTitle = "Robert's blog" # Title for home page
+poweredby = true # Adds powered by hugo and kiss below Copyright
+related = true # Includes related articles at the bottom of the article
+
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = "" # Twitter Page username. If not set, params.social.twitter will be used.
+
+[params.social]
+twitter = ""
+github = "rhubinak"
+email = "rhubinak@gmail.com"
+facebook = ""
+instagram = ""
+codepen = ""
+rss = "index.xml" # Add this to show RSS button in social.
+
+[params.social.config]
+platforms = ["github","email"]
+
+[taxonomies]
+tag ="tags"
+
+[blackfriday]
+hrefTargetBlank = true
+
+#[Languages]
+#[Languages.en]
+#languageCode = "en-US"
+#languageName = "EN"
+#[Languages.de]
+#languageCode = "de-DE"
+#languageName = "DE"
+#[Languages.svk]
+#languageCode = "sk-SK"
+#languageName = "SK"
+#title = "Robov blog"
+#copyright = "<a href=\"keybase.txt\">&copy;</a> <a href=\"https://github.com/rhubinak\">Róbert Hubinák</a> 2017"
+
