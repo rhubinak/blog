@@ -1,11 +1,17 @@
 #!/bin/bash
+#echo -e "\033[0;32mSpellcheck\033[0m"
+#hunspell -d en_US content/posts/*.md
+
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 # Optimize CSS
-purifycss public/css/style.css public/index.html public/404.html public/tags/index.html public/tags/page/1/index.html public/posts/index.html public/posts/page/1/index.html public/posts/the_reason_for_this_blog/index.html public/posts/how_to_establish_a_llc_in_czech_republic/index.html public/page/1/index.html --min --info --out public/css/style.css
+purgecss --css themes/kiss/static/css/style.css --content public/*.html public/**/*.html public/**/**/*.html public/**/**/**/*.html --out public/css/style.min.css
+
+# Optimize other stuff
+minify -r -o public/ public
 
 # Add changes to git.
 git add .
@@ -15,9 +21,11 @@ msg="rebuilding site `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
-git commit -m "$msg"
+git commit -S -m "$msg"
 
 git push origin master
+
+#git@github.com:rhubinak/dotfiles.git
 
 # Go To Public folder
 cd public
@@ -29,7 +37,7 @@ msg="rebuilding site `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
-git commit -m "$msg"
+git commit -S -m "$msg"
 
 # Push source and build repos.
 git push origin master
