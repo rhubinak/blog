@@ -8,7 +8,7 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 # Optimize CSS
-purgecss --css themes/kiss/static/css/style.css --content public/*.html public/**/*.html public/**/**/*.html public/**/**/**/*.html --out public/css/style.min.css
+purgecss --css themes/kiss/static/css/style.css --content public/*.html public/**/*.html public/**/**/*.html public/**/**/**/*.html --out public/css/
 
 # Optimize other stuff
 minify -r -o public/ public
@@ -24,8 +24,6 @@ fi
 git commit -S -m "$msg"
 
 git push origin master
-
-#git@github.com:rhubinak/dotfiles.git
 
 # Go To Public folder
 cd public

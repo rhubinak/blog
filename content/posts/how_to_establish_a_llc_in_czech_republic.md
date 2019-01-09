@@ -12,7 +12,7 @@ around 9000 CZK (350€, mainly depending on the minimum capital size).
 Establishing a LLC starts with choosing the company name, company specialization and company address. You can check company name availability [here](https://www.justice.cz). 
 List of possible company specializations can be found in [attachment no. 4 of the `455/1991` law](https://business.center.cz/business/pravo/zakony/zivnost/priloha4.aspx). 
 You might want to read the whole law and also throw in the [`563/1991`](https://business.center.cz/business/pravo/zakony/ucto/) to get an overview of accounting practices and 
-[`480/2004`](https://business.center.cz/business/pravo/zakony/infspol/) (alias GDPR). 
+[`480/2004`](https://business.center.cz/business/pravo/zakony/infspol/) (alias [GDPR](https://gdpr.eu/)). 
 Company address can be the same as your address (if you have temporary or permanent residency in Czech republic), but this is not recommended: 
 in case your company goes under and asset forfeiture is in progress, you may also say goodbye to some of your personal belongings. 
 Better approach would be to use the services of a virtual address rental company. They cost around 10€/month and will scan and forward you any received physical mail 
